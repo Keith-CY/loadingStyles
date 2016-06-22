@@ -188,6 +188,63 @@
             transform:scale(0);
           }
         }
+        /*Loading Style 7*/
+        .loading_7{
+          width: 40px;
+          height: 40px;
+          position:relative;
+          margin:0 auto;
+          position:relative;
+          text-align: center;
+        }
+        .loading_7 div{
+          width: 25%;
+          height: 25%;
+          background:#45D;
+          border-radius:50%;
+          position:absolute;
+          margin: 0;
+          transform-origin:200% 50%;
+          top: 50%;
+          margin-top:-12.5%;
+          animation:scale_7 1s infinite;
+        }
+        .loading_7 div:nth-of-type(2){
+          transform:rotate(45deg);
+          animation-delay:-.875s;
+        }
+        .loading_7 div:nth-of-type(3){
+          transform:rotate(90deg);
+          animation-delay:-.75s;
+        }
+        .loading_7 div:nth-of-type(4){
+          transform:rotate(135deg);
+          animation-delay:-.625s;
+        }
+        .loading_7 div:nth-of-type(5){
+          transform:rotate(180deg);
+          animation-delay:-.5s
+        }
+        .loading_7 div:nth-of-type(6){
+          transform:rotate(225deg);
+          animation-delay:-.375s
+        }
+        .loading_7 div:nth-of-type(7){
+          transform:rotate(270deg);
+          animation-delay:-.25s
+        }
+        .loading_7 div:last-of-type{
+         transform:rotate(315deg);
+          animation-delay:-.125s
+        }
+        @keyframes scale_7{
+          40%,50%{
+            opacity:1;
+          }
+          from,to{
+           opacity:0; 
+          }
+        }
     </style>
   </head>
   <body>
@@ -463,6 +520,91 @@
   }
   0%,80%,100%{
     transform:scale(0);
+  }
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 7</h3>
+          <div class="loading_7">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+&lt;div class="loading_7"&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+/*CSS*/
+.loading_7{
+  width: 40px;
+  height: 40px;
+  position:relative;
+  margin:0 auto;
+  position:relative;
+  text-align: center;
+}
+.loading_7 div{
+  width: 25%;
+  height: 25%;
+  background:#45D;
+  border-radius:50%;
+  position:absolute;
+  margin: 0;
+  transform-origin:200% 50%;
+  top: 50%;
+  margin-top:-12.5%;
+  animation:scale_7 1s infinite;
+}
+.loading_7 div:nth-of-type(2){
+  transform:rotate(45deg);
+  animation-delay:-.875s;
+}
+.loading_7 div:nth-of-type(3){
+  transform:rotate(90deg);
+  animation-delay:-.75s;
+}
+.loading_7 div:nth-of-type(4){
+  transform:rotate(135deg);
+  animation-delay:-.625s;
+}
+.loading_7 div:nth-of-type(5){
+  transform:rotate(180deg);
+  animation-delay:-.5s
+}
+.loading_7 div:nth-of-type(6){
+  transform:rotate(225deg);
+  animation-delay:-.375s
+}
+.loading_7 div:nth-of-type(7){
+  transform:rotate(270deg);
+  animation-delay:-.25s
+}
+.loading_7 div:last-of-type{
+ transform:rotate(315deg);
+  animation-delay:-.125s
+}
+@keyframes scale_7{
+  40%,50%{
+    opacity:1;
+  }
+  from,to{
+   opacity:0; 
   }
 }
 </code></pre>
