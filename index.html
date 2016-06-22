@@ -207,7 +207,7 @@
           transform-origin:200% 50%;
           top: 50%;
           margin-top:-12.5%;
-          animation:scale_7 1s infinite;
+          animation:opacity_7 1s infinite;
         }
         .loading_7 div:nth-of-type(2){
           transform:rotate(45deg);
@@ -237,7 +237,7 @@
          transform:rotate(315deg);
           animation-delay:-.125s
         }
-        @keyframes scale_7{
+        @keyframes opacity_7{
           40%,50%{
             opacity:1;
           }
@@ -245,10 +245,89 @@
            opacity:0; 
           }
         }
+        /*Loading Style 8*/
+        .loading_8{
+          width: 40px;
+          height: 40px;
+          position:relative;
+          margin:0 auto;
+          position:relative;
+          text-align: center;
+        }
+        .loading_8 div{
+          width: 25%;
+          height: 25%;
+          position:absolute;
+          transform-origin:300% 50%;
+          top: 50%;
+          margin-top:-12.5%;
+          margin-left:-25%;
+        }
+        .loading_8 div:before{
+          content:"";
+          background:#45D;
+          width: 100%;
+          height: 100%;
+          position:absolute;
+          border-radius:50%;
+          animation: scale_8 1s infinite;
+        }
+
+        .loading_8 div:nth-of-type(2){
+          transform:rotate(45deg);
+        }
+        .loading_8 div:nth-of-type(3){
+          transform:rotate(90deg);
+        }
+        .loading_8 div:nth-of-type(4){
+          transform:rotate(135deg);
+        }
+        .loading_8 div:nth-of-type(5){
+          transform:rotate(180deg);
+        }
+        .loading_8 div:nth-of-type(6){
+          transform:rotate(225deg);
+        }
+        .loading_8 div:nth-of-type(7){
+          transform:rotate(270deg);
+        }
+        .loading_8 div:last-of-type{
+         transform:rotate(315deg);
+        }
+
+        .loading_8 div:nth-of-type(2):before{
+          animation-delay:-.875s;
+        }
+        .loading_8 div:nth-of-type(3):before{
+          animation-delay:-.75s;
+        }
+        .loading_8 div:nth-of-type(4):before{
+          animation-delay:-.625s;
+        }
+        .loading_8 div:nth-of-type(5):before{
+          animation-delay:-.5s
+        }
+        .loading_8 div:nth-of-type(6):before{
+          animation-delay:-.375s
+        }
+        .loading_8 div:nth-of-type(7):before{
+          animation-delay:-.25s
+        }
+        .loading_8 div:last-of-type:before{
+          animation-delay:-.125s
+        }
+        @keyframes scale_8{
+          40%,50%{
+            transform:scale(1);
+          }
+          from,to{
+           transform:scale(0); 
+          }
+        }
     </style>
   </head>
   <body>
-  <h1>Click to Show the Source Code</h1>
+  <h1>Click to Show the Source Code<br><small>点击显示源代码</small></h1>
     <div class="container">
       <div class="row">
         <div class="col-sm-2">
@@ -569,7 +648,7 @@
   transform-origin:200% 50%;
   top: 50%;
   margin-top:-12.5%;
-  animation:scale_7 1s infinite;
+  animation:opacity_7 1s infinite;
 }
 .loading_7 div:nth-of-type(2){
   transform:rotate(45deg);
@@ -599,12 +678,119 @@
  transform:rotate(315deg);
   animation-delay:-.125s
 }
-@keyframes scale_7{
+@keyframes opacity_7{
   40%,50%{
     opacity:1;
   }
   from,to{
    opacity:0; 
+  }
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 8</h3>
+          <div class="loading_8">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+&lt;div class="loading_8"&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+/*CSS*/
+.loading_8{
+  width: 40px;
+  height: 40px;
+  position:relative;
+  margin:0 auto;
+  position:relative;
+  text-align: center;
+}
+.loading_8 div{
+  width: 25%;
+  height: 25%;
+  position:absolute;
+  transform-origin:300% 50%;
+  top: 50%;
+  margin-top:-12.5%;
+  margin-left:-25%;
+}
+.loading_8 div:before{
+  content:"";
+  background:#45D;
+  width: 100%;
+  height: 100%;
+  position:absolute;
+  border-radius:50%;
+  animation: scale_8 1s infinite;
+}
+
+.loading_8 div:nth-of-type(2){
+  transform:rotate(45deg);
+}
+.loading_8 div:nth-of-type(3){
+  transform:rotate(90deg);
+}
+.loading_8 div:nth-of-type(4){
+  transform:rotate(135deg);
+}
+.loading_8 div:nth-of-type(5){
+  transform:rotate(180deg);
+}
+.loading_8 div:nth-of-type(6){
+  transform:rotate(225deg);
+}
+.loading_8 div:nth-of-type(7){
+  transform:rotate(270deg);
+}
+.loading_8 div:last-of-type{
+ transform:rotate(315deg);
+}
+
+.loading_8 div:nth-of-type(2):before{
+  animation-delay:-.875s;
+}
+.loading_8 div:nth-of-type(3):before{
+  animation-delay:-.75s;
+}
+.loading_8 div:nth-of-type(4):before{
+  animation-delay:-.625s;
+}
+.loading_8 div:nth-of-type(5):before{
+  animation-delay:-.5s
+}
+.loading_8 div:nth-of-type(6):before{
+  animation-delay:-.375s
+}
+.loading_8 div:nth-of-type(7):before{
+  animation-delay:-.25s
+}
+.loading_8 div:last-of-type:before{
+  animation-delay:-.125s
+}
+@keyframes scale_8{
+  40%,50%{
+    transform:scale(1);
+  }
+  from,to{
+   transform:scale(0); 
   }
 }
 </code></pre>
