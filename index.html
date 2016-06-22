@@ -324,6 +324,44 @@
            transform:scale(0); 
           }
         }
+        /*Loading Style 9*/
+        .loading_9{
+          width: 40px;
+          height: 40px;
+          position: relative;
+          margin: 0 auto;
+        }
+        .loading_9 div{
+          width: 33%;
+          height: 33%;
+          background-color: #45D;
+          float:left;
+          animation: scale_9 2s infinite linear;
+        }
+        .loading_9 div:nth-of-type(7){
+          animation-delay:0s;
+        }
+        .loading_9 div:nth-of-type(1),
+        .loading_9 div:nth-of-type(4),
+        .loading_9 div:nth-of-type(5),
+        .loading_9 div:nth-of-type(8),
+        .loading_9 div:nth-of-type(9){
+          animation-delay:0.33s;
+        }
+        .loading_9 div:nth-of-type(2),
+        .loading_9 div:nth-of-type(3),
+        .loading_9 div:nth-of-type(6){
+          animation-delay:0.66s;
+        }
+
+        @keyframes scale_9{
+          from,83.3%,to{
+            transform:scale(1);
+          }
+          33%,49.7%{
+            transform:scale(0);
+          }
+        }
     </style>
   </head>
   <body>
@@ -791,6 +829,75 @@
   }
   from,to{
    transform:scale(0); 
+  }
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 9</h3>
+          <div class="loading_9">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+&lt;div class="loading_9"&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+/*CSS*/
+.loading_9{
+  width: 40px;
+  height: 40px;
+  position: relative;
+  margin:0 auto;
+}
+.loading_9 div{
+  width: 33%;
+  height: 33%;
+  background-color: #45D;
+  float:left;
+  animation: scale_9 2s infinite linear;
+}
+.loading_9 div:nth-of-type(7){
+  animation-delay:0s;
+}
+.loading_9 div:nth-of-type(1),
+.loading_9 div:nth-of-type(4),
+.loading_9 div:nth-of-type(5),
+.loading_9 div:nth-of-type(8),
+.loading_9 div:nth-of-type(9){
+  animation-delay:0.33s;
+}
+.loading_9 div:nth-of-type(2),
+.loading_9 div:nth-of-type(3),
+.loading_9 div:nth-of-type(6){
+  animation-delay:0.66s;
+}
+
+@keyframes scale_9{
+  from,83.3%,to{
+    transform:scale(1);
+  }
+  33%,49.7%{
+    transform:scale(0);
   }
 }
 </code></pre>
