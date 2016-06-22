@@ -103,7 +103,7 @@
           height: 40px;
           position: relative;
         }
-        .cube1, .cube2{
+        .loading_4 .cube1,.loading_4 .cube2{
           background-color: #45D;
           width: 15px;
           height: 15px;
@@ -112,7 +112,7 @@
           left: 0;
           animation: cubeRotate 2s infinite ease-in-out;
         }
-        .cube2{
+        .loading_4 .cube2{
           animation-delay:-1s;
         }
         @keyframes cubeRotate{
@@ -124,6 +124,40 @@
           }
           75%{
             transform: translateY(39px) rotate(-270deg) scale(2);
+          }
+        }
+        /*Loading Style 5*/
+        .loading_5{
+          width: 40px;
+          height: 40px;
+          margin: 0 auto;
+          position:relative;
+          animation: rotate_5 2s infinite linear;
+          transform-origin:center center;
+        }
+        .loading_5 .circle1, .loading_5 .circle2{
+          width: 60%;
+          height: 60%;
+          border-radius:50%;
+          position:absolute;
+          background-color: #45D;
+          transform:scale(0);
+          animation: scale_5 2s infinite linear;
+        }
+        .loading_5 .circle2{
+          bottom: 0;
+          transform: scale(0);
+          animation-delay:-1s;
+        }
+        @keyframes rotate_5{
+          50%{       transform:rotate(180deg);
+          }
+          to{transform:rotate(360deg);
+          }
+        }
+        @keyframes scale_5{
+          50%{
+            transform: scale(1);
           }
         }
     </style>
@@ -283,7 +317,7 @@
   height: 40px;
   position: relative;
 }
-.cube1, .cube2{
+.loading_4 .cube1, .loading_4 .cube2{
   background-color: #45D;
   width: 15px;
   height: 15px;
@@ -292,7 +326,7 @@
   left: 0;
   animation: cubeRotate 2s infinite ease-in-out;
 }
-.cube2{
+.loading_4 .cube2{
   animation-delay:-1s;
 }
 @keyframes cubeRotate{
@@ -304,6 +338,57 @@
   }
   75%{
     transform: translateY(39px) rotate(-270deg) scale(2);
+  }
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 5</h3>
+          <div class="loading_5">
+            <div class="circle1"></div>
+            <div class="circle2"></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+&lt;div class="loading_5"&gt;
+  &lt;div class="circle1"&gt;&lt;/div&gt;
+  &lt;div class="circle2"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+/*CSS*/
+.loading_5{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  position:relative;
+  animation: rotate_5 2s infinite linear;
+  transform-origin:center center;
+}
+.loading_5 .circle1, .loading_5 .circle2{
+  width: 60%;
+  height: 60%;
+  border-radius:50%;
+  position:absolute;
+  background-color: #45D;
+  transform:scale(0);
+  animation: scale_5 2s infinite linear;
+}
+.loading_5 .circle2{
+  bottom: 0;
+  transform: scale(0);
+  animation-delay:-1s;
+}
+@keyframes rotate_5{
+  50%{       transform:rotate(180deg);
+  }
+  to{transform:rotate(360deg);
+  }
+}
+@keyframes scale_5{
+  50%{
+    transform: scale(1);
   }
 }
 </code></pre>
