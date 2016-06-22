@@ -790,6 +790,57 @@
 }
 </code></pre>
         </div>
+        <div class="col-sm-2">
+          <h3>Style 15</h3>
+          <div class="loading_15">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+&lt;div class="loading_15"&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+/*CSS*/
+.loading_15{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.loading_15 div{
+  width: 32px;
+  height: 32px;
+  background-color: #45D;
+  border-radius:50%;
+  box-shadow: 40px 0 1px -8px #45D, 0 0 3px 0 #45D;
+  position:relative;
+  animation: rotate_15 8s infinite linear;
+}
+
+.loading_15 div:after{
+  content:"";
+  position:absolute;
+  width: 80px;
+  height: 80px;
+  border:1px solid #45D;
+  border-radius:50%;
+  top: 50%;
+  left: 50%;
+  margin-top:-40px;
+  margin-left:-40px;
+  box-sizing:border-box;
+  
+}
+
+@keyframes rotate_15{
+  to{
+    transform:rotate(360deg);
+  }
+}
+</code></pre>
+        </div>
 
       </div>
     </div>

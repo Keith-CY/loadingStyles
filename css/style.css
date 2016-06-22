@@ -1,9 +1,13 @@
 .container{
 text-align:center;
 }
+.col-sm-2 h3{
+  padding:20px 0;
+}
 .col-sm-12{
 display: none;
 text-align: left;
+margin-top:20px;
 }
 /*Loading Style 1*/
 .loading_1{
@@ -514,5 +518,41 @@ animation-delay:-1s;
   }
   to{
     transform:rotate(360deg) scale(0.5); 
+  }
+}
+/*Loading Style 15*/
+.loading_15{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.loading_15 div{
+  width: 32px;
+  height: 32px;
+  background-color: #45D;
+  border-radius:50%;
+  box-shadow: 40px 0 1px -8px #45D, 0 0 3px 0 #45D;
+  position:relative;
+  animation: rotate_15 8s infinite linear;
+}
+
+.loading_15 div:after{
+  content:"";
+  position:absolute;
+  width: 80px;
+  height: 80px;
+  border:1px solid #45D;
+  border-radius:50%;
+  top: 50%;
+  left: 50%;
+  margin-top:-40px;
+  margin-left:-40px;
+  box-sizing:border-box;
+  
+}
+
+@keyframes rotate_15{
+  to{
+    transform:rotate(360deg);
   }
 }
