@@ -847,8 +847,8 @@
       (function($) {
         'use strict';
         $('.col-sm-2').on("click", function(){
-          $(this).next().toggle(100);
-          $(".col-sm-12").not($(this).next()).fadeOut();
+          $(this).next().slideToggle(1000);
+          $(".col-sm-12").not($(this).next()).slideUp();
         });
       }(jQuery));
     </script>
