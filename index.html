@@ -160,6 +160,34 @@
             transform: scale(1);
           }
         }
+        /*Loading Style 6*/
+        .loading_6{
+          width: 40px;
+          height: 40px;
+          margin:0 auto;
+        }
+        .loading_6 div{
+          width: 10px;
+          height: 10px;
+          border-radius:50%;
+          background-color:#45D;
+          display:inline-block;
+          animation: scale_6 2s infinite ease-in-out;
+        }
+        .loading_6 div:nth-of-type(2){
+          animation-delay:-1.6s;
+        }
+        .loading_6 div:last-of-type{
+          animation-delay:-1.2s;
+        }
+        @keyframes scale_6{
+          40%{
+            transform:scale(1.5);
+          }
+          0%,80%,100%{
+            transform:scale(0);
+          }
+        }
     </style>
   </head>
   <body>
@@ -305,10 +333,10 @@
         <div class="col-sm-12">
 <pre><code>
 /*HTML*/
-<div class="loading_4">
-  <div class="cube1"></div>
-  <div class="cube2"></div>
-</div>
+&lt;div class="loading_4"&gt;
+  &lt;div class="cube1"&gt;&lt;/div&gt;
+  &lt;div class="cube2"&gt;&lt;/div&gt;
+&lt;/div&gt;
 
 /*CSS*/
 .loading_4{
@@ -389,6 +417,52 @@
 @keyframes scale_5{
   50%{
     transform: scale(1);
+  }
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 6</h3>
+          <div class="loading_6">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+&lt;div&gt;class="loading_6">
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/di&gt;>
+
+/*CSS*/
+.loading_6{
+  width: 40px;
+  height: 40px;
+  margin:0 auto;
+}
+.loading_6 div{
+  width: 10px;
+  height: 10px;
+  border-radius:50%;
+  background-color:#45D;
+  display:inline-block;
+  animation: scale_6 2s infinite ease-in-out;
+}
+.loading_6 div:nth-of-type(2){
+  animation-delay:-1.6s;
+}
+.loading_6 div:last-of-type{
+  animation-delay:-1.2s;
+}
+@keyframes scale_6{
+  40%{
+    transform:scale(1.5);
+  }
+  0%,80%,100%{
+    transform:scale(0);
   }
 }
 </code></pre>
