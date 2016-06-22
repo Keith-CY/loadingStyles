@@ -96,6 +96,36 @@
           50%{
             transform:scale(1);}
         }
+        /*Loading Style 4*/
+        .loading_4{
+          margin: 0 auto;
+          width: 40px;
+          height: 40px;
+          position: relative;
+        }
+        .cube1, .cube2{
+          background-color: #45D;
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          animation: cubeRotate 2s infinite ease-in-out;
+        }
+        .cube2{
+          animation-delay:-1s;
+        }
+        @keyframes cubeRotate{
+          25%{
+            transform: translateX(39px) rotate(-90deg) scale(0.5);
+          }
+          50%{
+            transform: translate(39px, 39px) rotate(-180deg);
+          }
+          75%{
+            transform: translateY(39px) rotate(-270deg) scale(2);
+          }
+        }
     </style>
   </head>
   <body>
@@ -228,6 +258,53 @@
   }
   50%{
     transform:scale(1);}
+}
+</code></pre>
+        </div>
+        <div class="col-sm-2">
+          <h3>Style 4</h3>
+          <div class="loading_4">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre><code>
+/*HTML*/
+<div class="loading_4">
+  <div class="cube1"></div>
+  <div class="cube2"></div>
+</div>
+
+/*CSS*/
+.loading_4{
+  margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  position: relative;
+}
+.cube1, .cube2{
+  background-color: #45D;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: cubeRotate 2s infinite ease-in-out;
+}
+.cube2{
+  animation-delay:-1s;
+}
+@keyframes cubeRotate{
+  25%{
+    transform: translateX(39px) rotate(-90deg) scale(0.5);
+  }
+  50%{
+    transform: translate(39px, 39px) rotate(-180deg);
+  }
+  75%{
+    transform: translateY(39px) rotate(-270deg) scale(2);
+  }
 }
 </code></pre>
         </div>
