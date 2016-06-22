@@ -478,14 +478,15 @@ animation-delay:-1s;
   content:"";
   position:absolute;
   top: 0px;
-  left: -1px;
+  left: -4px;
   border:5px solid;
   border-color:#45D #45D transparent transparent;
 }
 .loading_13 div:after{
-  top: 30px;
-  left:31px;
+  top: 22px;
+  left:23px;
   transform:rotate(180deg);
+  box-sizing: border-box;
 }
 
 @keyframes circle_13{
