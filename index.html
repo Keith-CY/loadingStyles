@@ -910,6 +910,64 @@
 }
 </code></pre>
         </div>
+        <div class="col-sm-2">
+          <h3>Style 17</h3>
+          <div class="loading_17">
+            <div></div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+<pre class="code">
+/*HTML*/
+
+/*CSS*/
+.loading_17{
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.loading_17 div{
+  width: 40px;
+  height: 40px;
+  position:relative;
+  animation: rotate_17 2s infinite linear;
+}
+.loading_17 div:before{
+  content:"";
+  width: 40px;
+  height: 20px;
+  position:absolute;
+  top: 0;
+  left: 0;
+  box-sizing:border-box;
+  padding:8px;
+  padding-bottom:0px;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(#fff,#fff), linear-gradient(to right,#fff,rgba(68,85,221,0.5) 90%);
+  background-clip:content-box, padding-box;
+}
+.loading_17 div:after{
+  content:"";
+  width: 40px;
+  height: 20px;
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  box-sizing:border-box;
+  padding:8px;
+  padding-top:0px;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(#fff,#fff), linear-gradient(to right,#45D, rgba(68,85,221,0.5) 90%);
+  background-clip:content-box, padding-box;
+}
+  
+@keyframes rotate_17{
+  to{
+    transform:rotate(360deg);
+  }
+}
+</pre>
+        </div>
 
       </div>
     </div>
